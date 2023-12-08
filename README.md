@@ -1,14 +1,16 @@
-[1] - Установка Python 3.10 или более позднего
+[1] - Установка Python 3.10 (или более позднего), pip и python3.10-venv
 # https://docs.python.org/3/using/windows.html#launcher
-Установка pip (если нужно)
 # https://pip.pypa.io/en/stable/installing/
+```bash
+    apt install python3.10-venv
+```
 
 
 [2] - Создание изолированного окружения
 * При работе в Linux
 ```bash
-    $ python3 -m venv az_env
-    $ source az_env/bin/activate
+    $ python3 -m venv azenv
+    $ source azenv/bin/activate
 ```
 * При работе в Windows
 ```bash
