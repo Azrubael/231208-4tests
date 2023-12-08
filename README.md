@@ -28,11 +28,11 @@
 # [4] - Запуск первого приложения
 * При работе в Linux
 ```bash
-    (az_env)$ python3 1st/run_me1st.py
+    (az_env)$ python3 1st/runme.py
 ```
 * При работе в Windows
 ```bash
-    (az_env)$ py python3 1st/run_me1st.py
+    (az_env)$ py python3 1st/runme.py
 ```
 
 
