@@ -1,0 +1,6 @@
+{
+    "condition": {
+        "include": [{"disabled": "true"}, {"language": "arabian"}],
+        "sort_by": ["rating"]
+    }
+}

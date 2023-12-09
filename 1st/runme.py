@@ -9,7 +9,6 @@ def read_json(file_path):
         print(f'File {file_path} reading error.')
 
 
-
 def save_json(data, file_path):
     try:
         with open(file_path, 'a') as f:
@@ -17,7 +16,6 @@ def save_json(data, file_path):
             f.write('\n')
     except:
         print(f'File {file_path} writing error.')
-
 
 
 in_data = read_json('1st/input.json')

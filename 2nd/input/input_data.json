@@ -1,0 +1,12 @@
+{"data": [
+     {"user": "mike@aol.com", "rating": 20, "disabled": false, "language": "english"},
+     {"user": "john@yahoo.de", "rating": 18, "disabled": false, "language": "german"},
+     {"user": "helen@gmail.bz", "rating": 23, "disabled": true, "language": "portuguese"},
+     {"user": "helen@i.us", "rating": 27, "disabled": true, "language": "portuguese"},
+     {"user": "sarah@ukr.net", "rating": 24, "disabled": true, "language": "english"},
+     {"user": "laika@moon.jp", "rating": 16, "disabled": false, "language": "japan"},
+     {"user": "ssd@wooxi.cn", "rating": 37, "disabled": false, "language": "arabian"},
+     {"user": "shiba@moon.jp", "rating": 49, "disabled": true, "language": "japan"},
+     {"user": "ssd@wooxi.il", "rating": 33, "disabled": true, "language": "arabian"}
+     ]
+}

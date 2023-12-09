@@ -1,0 +1,16 @@
+{
+  "result": [
+    {
+      "user": "ssd@wooxi.cn",
+      "rating": 37,
+      "disabled": false,
+      "language": "arabian"
+    },
+    {
+      "user": "ssd@wooxi.il",
+      "rating": 33,
+      "disabled": true,
+      "language": "arabian"
+    }
+  ]
+}
