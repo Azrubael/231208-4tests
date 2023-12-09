@@ -30,14 +30,16 @@ def include_by_keys(item, condition):
 
 
 def exclude_by_keys(item, condition):
-    print(item, '\n', condition)
-    result = False
+    res = False
     for i in item:
-        if item[i] == condition:
-            print(item[i])
+        for j in condition:
+            for v in j:
+                if item[i] == j[v]:
+                    res = True
+    return res
 
 
-conditions = read_json('2nd/input/ext_conditions.json')
+conditions = read_json('2nd/input/conditions.json')
 in_data = read_json('2nd/input/input_data.json')['data']
 
 selection = []
@@ -53,10 +55,10 @@ if 'exclude' in conditions['condition']:
 if include != [] and exclude == []:
     selection = [item for item in in_data if include_by_keys(item, include)]
 if exclude != [] and include == []:
-    selection = [item for item in in_data if exclude_by_keys(item, include)]
+    selection = [item for item in in_data if not exclude_by_keys(item, exclude)]
 if exclude != [] and include != []:
     int_sel = [item for item in in_data if include_by_keys(item, include)]
-    selection = [item for item in int_sel if include_by_keys(item, include)]
+    selection = [item for item in int_sel if not exclude_by_keys(item, include)]
 
 result['result'] = selection
 print('Your selection:')

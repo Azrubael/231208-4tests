@@ -1,6 +1,6 @@
 {
     "condition": {
-        "include": [{"disabled": true}],
+        "exclude": [{"disabled": true}],
         "sort_by": ["rating"]
     }
 }   
