@@ -39,18 +39,29 @@ def exclude_by_keys(item, condition):
     return res
 
 
-conditions = read_json('2nd/input/conditions.json')
+def sort_by_keys(selection, sort_by):
+    sorted_selection = []
+    for i in sort_by:
+        print(i)
+        sorted_selection = sorted(selection, key=lambda x: x[i], reverse=False)
+    return sorted_selection
+
+
+conditions = read_json('2nd/input/ext_conditions.json')
 in_data = read_json('2nd/input/input_data.json')['data']
 
 selection = []
 include = []
 exclude = []
+sort_by = []
 result = {}
 
 if 'include' in conditions['condition']:
     include = conditions['condition']['include']
 if 'exclude' in conditions['condition']:
     exclude = conditions['condition']['exclude']
+if 'sort_by' in conditions['condition']:
+    sort_by = conditions['condition']['sort_by']
 
 if include != [] and exclude == []:
     selection = [item for item in in_data if include_by_keys(item, include)]
@@ -59,6 +70,8 @@ if exclude != [] and include == []:
 if exclude != [] and include != []:
     int_sel = [item for item in in_data if include_by_keys(item, include)]
     selection = [item for item in int_sel if not exclude_by_keys(item, include)]
+if sort_by != []:
+    selection = sort_by_keys(selection, sort_by)
 
 result['result'] = selection
 print('Your selection:')

@@ -1,0 +1,28 @@
+{
+  "result": [
+    {
+      "user": "laika@moon.jp",
+      "rating": 16,
+      "disabled": false,
+      "language": "japan"
+    },
+    {
+      "user": "john@yahoo.de",
+      "rating": 18,
+      "disabled": false,
+      "language": "german"
+    },
+    {
+      "user": "mike@aol.com",
+      "rating": 20,
+      "disabled": false,
+      "language": "english"
+    },
+    {
+      "user": "ssd@wooxi.cn",
+      "rating": 37,
+      "disabled": false,
+      "language": "arabian"
+    }
+  ]
+}
