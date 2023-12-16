@@ -19,7 +19,7 @@
 ```
 
 
-# [3] - Автоконфигурация изолированного окружения Pythom
+# [3] - Автоконфигурация изолированного окружения Python3
 ```bash
     (az_env)$ pip install -r dependencies.txt
 ```
@@ -36,12 +36,9 @@
 ```
 
 
-# [5] - Создание перечня зависимостей [только для разработки]
+# [5] - Создание перечня зависимостей
 ```bash
     (az_env)$ pip freeze > dependencies.txt
-# OR
-    (az_env)$ pip install findpydeps
-    (az_env)$ findpydeps -i path/to/folder > dependencies.txt
 ```
 
 
