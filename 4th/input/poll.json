@@ -1,0 +1,130 @@
+{
+   "questions": [
+      {
+         "uin": "A",
+         "body": "How often do you shop with us?",
+         "answers": [
+            "Few times a week",
+            "Few times a month",
+            "Less than once a month"
+            ]
+      },
+      {
+         "uin": "B",
+         "body": "Do you only shop with us when needed?",
+         "answers": ["Yes", "No"]
+      },
+      {
+         "uin": "C",
+         "body": "Before visiting us, you make a list",
+         "answers": ["Yes", "No"]
+      },
+      {
+         "uin": "D",
+         "body": "How satisfied are you with our pricing policy?",
+         "answers": [
+            "Quite satisfied",
+            "More or less",
+            "Not satisfied"
+            ]
+      },
+      {
+         "uin": "E",
+         "body": "Would you recommend us to your friends?",
+         "answers": ["Yes", "No"]
+      },
+      {
+         "uin": "F",
+         "body": "Are you satisfied with our range?",
+         "answers": ["Yes", "No"]
+      },
+      {
+         "uin": "Z",
+         "body": "Thank you for attention!",
+         "answers": ["Submit"]
+      }
+   ],
+   "process": [
+      {  "node": "0", "uin": "A",
+         "uinCall": ["B", "C", "D"],
+         "nextNode": ["1", "2", "3"]   },
+      {  "node": "1", "uin": "B",
+         "uinCall": ["D", "E"],
+         "nextNode": ["11", "12"]   },
+      {  "node": "2", "uin": "C",
+         "uinCall": ["B", "D"],
+         "nextNode": ["21", "22"]   },
+      {  "node": "3", "uin": "D",
+         "uinCall": ["E", "F", "B"],
+         "nextNode": ["31", "32", "33"]   },
+      {  "node": "11", "uin": "D",
+         "uinCall": ["Z", "Z", "Z"],   
+         "nextNode": ["111", "112", "113"]   },
+      {  "node": "12", "uin": "E",
+         "uinCall": ["Z", "Z"],
+         "nextNode": ["121", "122"]   },
+      {  "node": "21", "uin": "B",
+         "uinCall": ["Z", "Z"],
+         "nextNode": ["211", "212"]   },
+      {  "node": "22", "uin": "D",
+         "uinCall": ["Z", "Z", "Z"],
+         "nextNode": ["221", "222", "223"]   },
+      {  "node": "31", "uin": "E",
+         "uinCall": ["Z", "Z"],
+         "nextNode": ["311", "312"] },
+      {  "node": "32", "uin": "B",
+         "uinCall": ["Z", "Z"],
+         "nextNode": ["321", "322"] },
+      {  "node": "33", "uin": "F",
+         "uinCall": ["Z", "Z"],
+         "nextNode": ["331", "332"]  },
+      {  "node": "111", "uin": "Z",
+         "uinCall": [],
+         "nextNode": []  },
+      {  "node": "112", "uin": "Z",
+         "uinCall": [],
+         "nextNode": []  },
+      {  "node": "113", "uin": "Z",
+         "uinCall": [],
+         "nextNode": []  },
+      {  "node": "121", "uin": "Z",
+         "uinCall": [],
+         "nextNode": []  },
+      {  "node": "122", "uin": "Z",
+         "uinCall": [],
+         "nextNode": []  },
+      {  "node": "211", "uin": "Z",
+         "uinCall": [],
+         "nextNode": []  },
+      {  "node": "212", "uin": "Z",
+         "uinCall": [],
+         "nextNode": []  },
+      {  "node": "221", "uin": "Z",
+         "uinCall": [],
+         "nextNode": []  },
+      {  "node": "222", "uin": "Z",
+         "uinCall": [],
+         "nextNode": []  },
+      {  "node": "223", "uin": "Z",
+         "uinCall": [],
+         "nextNode": []  },
+      {  "node": "311", "uin": "Z",
+         "uinCall": [],
+         "nextNode": []  },
+      {  "node": "312", "uin": "Z",
+         "uinCall": [],
+         "nextNode": []  },
+      {  "node": "321", "uin": "Z",
+         "uinCall": [],
+         "nextNode": []  },
+      {  "node": "322", "uin": "Z",
+         "uinCall": [],
+         "nextNode": []  },
+      {  "node": "331", "uin": "Z",
+         "uinCall": [],
+         "nextNode": []  },
+      {  "node": "332", "uin": "Z",
+         "uinCall": [],
+         "nextNode": []  }
+   ]
+}
