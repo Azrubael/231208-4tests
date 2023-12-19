@@ -1,51 +1,57 @@
 from storage_svc import check_n_read, save_result
 
 
-# Змінна для буферізації сценарію
-DATA = {}
+class Node:
+    def __init__(self, value):
+        self.value = value
+        self.children = []
 
 
-def DFS(pointer, stack):
-    current_node = None
-    children = None
-    process = DATA['process']
-    print(process)
-    for item in process:
-        if item.get('node') == pointer:
+def dfs_paths(node, current_path, all_paths):
+    for item in DATA['process']:
+        if node is None:
+            return
+        if item.get('node') == node:
             current_node = item
-            children = len(item.get('nextNode'))
-            stack.append(item['node'])
             break
-    if children == 0:
-        stack.append['END']
-        return stack
-    for i in range(children-1):
-        DFS(current_node['nextNode'][i], stack)
-        if children == 0:
-            stack.append['END']
-            return stack
-    print(f"It was found a node {current_node}, with {children} children")
+    current_path.append(node)  
+    if current_node['uin'] == 'Z':
+        all_paths.append(current_path[:] + ['END'])
+    else:
+        for child in current_node['nextNode']:
+            dfs_paths(child, current_path, all_paths)  
+    # Backtrack: поточна нода із шляху видаляється
+    current_path.pop()
 
 
-    return stack
-
-
+# Генерація передіку відповідей
 def path_list(expl_array):
     pass
 
 
+# Змінна для буферізації сценарію
+DATA = {}
 
-if __name__ == '__main__':
-    input_path = '4th/input/poll.json'
-    output_path = '4th/boutput/'
-    print('Цей скріпт виконує перевірку сценарія опитання')
-    DATA = check_n_read(input_path)
-    
-    expl_array = DFS('0',[])
-    qty = len(expl_array)
+# Ініціфлизація змінних для зберігання шляхів
+all_paths = []
+current_path = []
 
-    print(f'Знайдено {qty} унікальних ланцюжков відповідей:\n')
-    output_data = { 'Шляхи': \
-            { 'Кількість': qty, 'Перелік шляхів':  path_list(expl_array)} }
+# Файли, з которими працює цей скрипт
+input_file = '4th/input/poll.json'
+output_file = '4th/boutput/'
 
-    save_result(output_path, output_data)
+
+print('Цей скрипт виконує перевірку сценарія опитання')
+DATA = check_n_read(input_file)
+
+dfs_paths('0',current_path, all_paths)
+qty = len(all_paths)
+
+print(f'Знайдено {qty} унікальних ланцюжков відповідей:\n')
+output_data = { 'Шляхи': \
+        { 'Кількість': qty, 'Перелік шляхів':  path_list(all_paths)} }
+
+for p in all_paths:
+    print(p)
+
+save_result(output_file, output_data)
