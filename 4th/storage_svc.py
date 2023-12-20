@@ -22,7 +22,8 @@ def save_result(path, data):
     save_path = path + 'output_' + str(ms) + '.json'
     print('Шлях до записуваного файлу', save_path)
 
-
-
-def is_correct(path):
-    pass
+    try:
+        with open(save_path, 'w') as f:
+            json.dump(data, f, indent=2)
+    except:
+        print('Помилка під час запису в файл', save_path)

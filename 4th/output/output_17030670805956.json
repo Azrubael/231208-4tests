@@ -1,0 +1,279 @@
+{
+  "paths": {
+    "quantity": 16,
+    "list": [
+      [
+        {
+          "How often do you shop with us?": "Few times a week"
+        },
+        {
+          "Do you only shop with us when needed?": "Yes"
+        },
+        {
+          "How satisfied are you with our pricing policy?": "Quite satisfied"
+        },
+        {
+          "How satisfied are you with our pricing policy?": "Quite satisfied"
+        },
+        {
+          "Thank you for attention!": "Submit"
+        }
+      ],
+      [
+        {
+          "How often do you shop with us?": "Few times a week"
+        },
+        {
+          "Do you only shop with us when needed?": "Yes"
+        },
+        {
+          "How satisfied are you with our pricing policy?": "More or less"
+        },
+        {
+          "How satisfied are you with our pricing policy?": "More or less"
+        },
+        {
+          "Thank you for attention!": "Submit"
+        }
+      ],
+      [
+        {
+          "How often do you shop with us?": "Few times a week"
+        },
+        {
+          "Do you only shop with us when needed?": "Yes"
+        },
+        {
+          "How satisfied are you with our pricing policy?": "Not satisfied"
+        },
+        {
+          "How satisfied are you with our pricing policy?": "Not satisfied"
+        },
+        {
+          "Thank you for attention!": "Submit"
+        }
+      ],
+      [
+        {
+          "How often do you shop with us?": "Few times a week"
+        },
+        {
+          "Do you only shop with us when needed?": "No"
+        },
+        {
+          "Would you recommend us to your friends?": "Yes"
+        },
+        {
+          "Would you recommend us to your friends?": "Yes"
+        },
+        {
+          "Thank you for attention!": "Submit"
+        }
+      ],
+      [
+        {
+          "How often do you shop with us?": "Few times a week"
+        },
+        {
+          "Do you only shop with us when needed?": "No"
+        },
+        {
+          "Would you recommend us to your friends?": "No"
+        },
+        {
+          "Would you recommend us to your friends?": "No"
+        },
+        {
+          "Thank you for attention!": "Submit"
+        }
+      ],
+      [
+        {
+          "How often do you shop with us?": "Few times a month"
+        },
+        {
+          "Before visiting us, you make a list": "Yes"
+        },
+        {
+          "Do you only shop with us when needed?": "Yes"
+        },
+        {
+          "Do you only shop with us when needed?": "Yes"
+        },
+        {
+          "Thank you for attention!": "Submit"
+        }
+      ],
+      [
+        {
+          "How often do you shop with us?": "Few times a month"
+        },
+        {
+          "Before visiting us, you make a list": "Yes"
+        },
+        {
+          "Do you only shop with us when needed?": "No"
+        },
+        {
+          "Do you only shop with us when needed?": "No"
+        },
+        {
+          "Thank you for attention!": "Submit"
+        }
+      ],
+      [
+        {
+          "How often do you shop with us?": "Few times a month"
+        },
+        {
+          "Before visiting us, you make a list": "No"
+        },
+        {
+          "How satisfied are you with our pricing policy?": "Quite satisfied"
+        },
+        {
+          "How satisfied are you with our pricing policy?": "Quite satisfied"
+        },
+        {
+          "Thank you for attention!": "Submit"
+        }
+      ],
+      [
+        {
+          "How often do you shop with us?": "Few times a month"
+        },
+        {
+          "Before visiting us, you make a list": "No"
+        },
+        {
+          "How satisfied are you with our pricing policy?": "More or less"
+        },
+        {
+          "How satisfied are you with our pricing policy?": "More or less"
+        },
+        {
+          "Thank you for attention!": "Submit"
+        }
+      ],
+      [
+        {
+          "How often do you shop with us?": "Few times a month"
+        },
+        {
+          "Before visiting us, you make a list": "No"
+        },
+        {
+          "How satisfied are you with our pricing policy?": "Not satisfied"
+        },
+        {
+          "How satisfied are you with our pricing policy?": "Not satisfied"
+        },
+        {
+          "Thank you for attention!": "Submit"
+        }
+      ],
+      [
+        {
+          "How often do you shop with us?": "Less than once a month"
+        },
+        {
+          "How satisfied are you with our pricing policy?": "Quite satisfied"
+        },
+        {
+          "Would you recommend us to your friends?": "Yes"
+        },
+        {
+          "Would you recommend us to your friends?": "Yes"
+        },
+        {
+          "Thank you for attention!": "Submit"
+        }
+      ],
+      [
+        {
+          "How often do you shop with us?": "Less than once a month"
+        },
+        {
+          "How satisfied are you with our pricing policy?": "Quite satisfied"
+        },
+        {
+          "Would you recommend us to your friends?": "No"
+        },
+        {
+          "Would you recommend us to your friends?": "No"
+        },
+        {
+          "Thank you for attention!": "Submit"
+        }
+      ],
+      [
+        {
+          "How often do you shop with us?": "Less than once a month"
+        },
+        {
+          "How satisfied are you with our pricing policy?": "More or less"
+        },
+        {
+          "Do you only shop with us when needed?": "Yes"
+        },
+        {
+          "Do you only shop with us when needed?": "Yes"
+        },
+        {
+          "Thank you for attention!": "Submit"
+        }
+      ],
+      [
+        {
+          "How often do you shop with us?": "Less than once a month"
+        },
+        {
+          "How satisfied are you with our pricing policy?": "More or less"
+        },
+        {
+          "Do you only shop with us when needed?": "No"
+        },
+        {
+          "Do you only shop with us when needed?": "No"
+        },
+        {
+          "Thank you for attention!": "Submit"
+        }
+      ],
+      [
+        {
+          "How often do you shop with us?": "Less than once a month"
+        },
+        {
+          "How satisfied are you with our pricing policy?": "Not satisfied"
+        },
+        {
+          "Are you satisfied with our range?": "Yes"
+        },
+        {
+          "Are you satisfied with our range?": "Yes"
+        },
+        {
+          "Thank you for attention!": "Submit"
+        }
+      ],
+      [
+        {
+          "How often do you shop with us?": "Less than once a month"
+        },
+        {
+          "How satisfied are you with our pricing policy?": "Not satisfied"
+        },
+        {
+          "Are you satisfied with our range?": "No"
+        },
+        {
+          "Are you satisfied with our range?": "No"
+        },
+        {
+          "Thank you for attention!": "Submit"
+        }
+      ]
+    ]
+  }
+}
