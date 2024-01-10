@@ -21,28 +21,28 @@
 
 # [3] - Автоконфигурация изолированного окружения Python3
 ```bash
-    (az_env)$ pip install -r dependencies.txt
+    (azenv)$ pip install -r dependencies.txt
 ```
 
 
 # [4] - Запуск первого приложения
 * При работе в Linux
 ```bash
-    (az_env)$ python3 1st/runme.py
+    (azenv)$ python3 1st/runme.py
 ```
 * При работе в Windows
 ```bash
-    (az_env)$ py python3 1st/runme.py
+    (azenv)$ py 1st/runme.py
 ```
 
 
 # [5] - Создание перечня зависимостей
 ```bash
-    (az_env)$ pip freeze > dependencies.txt
+    (azenv)$ pip freeze > dependencies.txt
 ```
 
 
 # [6] - Деактивация изолированой среды
 ```bash
-    (az_env)$ deactivate
+    (azenv)$ deactivate
 ```

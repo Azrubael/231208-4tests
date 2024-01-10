@@ -1,12 +1,6 @@
 from storage_svc import check_n_read, save_result
 
 
-# class Node:
-#     def __init__(self, value):
-#         self.value = value
-#         self.children = []
-
-
 def dfs_paths(node, current_path, all_paths):
     for item in DATA['process']:
         if node is None:
